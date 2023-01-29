@@ -1,0 +1,31 @@
+.navbar-brand{
+    font-size: 2em;
+    color: white;
+}
+
+.navbar-nav{
+    align-items: end;
+    color: white;
+    font-size: 1.4em;
+}
+.nav-link{
+    color: white;
+}
+
+h2{
+    padding: 15px;
+    font-size: 2em;
+}
+h3{
+
+}
+
+.bg-dark-subtle{
+    margin: 3px;
+    padding: 10px;
+    
+}
+
+#home-tiles{
+    text-align: justify;
+}
