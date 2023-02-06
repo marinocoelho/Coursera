@@ -14,29 +14,13 @@
 var dc = {};
 
 var homeHtmlUrl = "snippets/home-snippet.html";
-<<<<<<< HEAD
 var allCategoriesUrl =
-  //"https://davids-restaurant.herokuapp.com/categories.json";
   "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
-  //"https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
-  'https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json';
-  //"https://davids-restaurant.herokuapp.com/menu_items.json?category=";
-  //"https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
-=======
-var allCategoriesUrl = 
-    "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
-  
-    
-var categoriesTitleHtml = "snippets/categories-title-snippet.html";
-var categoryHtml = "snippets/category-snippet.html";
-var menuItemsUrl = 
-    "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json";
-  
-    
->>>>>>> 3b38f529080929a6dd3983ab447192857286c2e5
+  "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/";
+  //"https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
