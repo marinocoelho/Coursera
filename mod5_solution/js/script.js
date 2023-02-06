@@ -17,11 +17,13 @@ var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl =
   //"https://davids-restaurant.herokuapp.com/categories.json";
   "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
+  //"https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
+  'https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json';
   //"https://davids-restaurant.herokuapp.com/menu_items.json?category=";
-  "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json";
+  //"https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
@@ -119,10 +121,9 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-      chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
-
-
+      //chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
+      //var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName" ,"'" + chosenCategoryShortName + "'");
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
